@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e6f7ff, #f0fff4);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 750px;
+    width: 90%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2d5f73;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-section h2 {
+    color: #287d7d;
+    border-bottom: 2px solid #69c2c2;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #4da7d3;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4da7d3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4298c2;
+    transform: translateY(-2px);
+}
+
+.resume-display {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    max-width: 90%;
+    float: left;
+}
+
+.resume-display h2 {
+    color: #287d7d;
+    border-bottom: 2px solid #69c2c2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.resume-display h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
