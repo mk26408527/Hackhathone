@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Generator</h1>
+            <p>Create your professional resume in minutes</p>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <form id="resumeForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                    </div>
+                    <h2>Qualifications & Experience</h2>
+                    <div class="form-group">
+                        <label for="education">Education</label>
+                        <textarea id="education" name="education" placeholder="Your educational background" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience</label>
+                        <textarea id="experience" name="experience" placeholder="Your work experience" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <textarea id="skills" name="skills" placeholder="Your key skills" required></textarea>
+                    </div>
+                    <button type="submit">Generate Resume</button>
+                </form>
+            </section>
+            <section class="resume-section">
+                <h2>Your Resume</h2>
+                <div id="resume-display" class="resume-content" contenteditable="true"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
